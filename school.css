@@ -2,7 +2,6 @@ body {
     margin:0;
     background-color:  #c2c2d6;
     
-    
 }
 
 .logo{
@@ -88,17 +87,12 @@ body {
   }
 
 .container{
-   
-  
-    height: 10em;
+   height: 10em;
    margin-right: 0px; 
    margin-left: 0px;
    display: flex;
    overflow: hidden;
-   width: 100%;
-   
-   
-   
+   width: 100%;  
 }
 
 
@@ -107,10 +101,16 @@ body {
     margin-left: 38%;
     font-family: 'Aclonica';font-size: 22px;
 }
+
 .card text{
     color:gold;
 }
 
+.card:hover{
+    transform: scale(1.03);
+    transform-origin: center;
+    transition: all 0.2s;
+}
 
 .card-group h3{
     color: green;
@@ -164,27 +164,32 @@ body {
    
 }
 .slider  h3{
+    width: 130px;
     border: 2px solid white;
     padding: 5px;
-
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.2s;
 }
 .photo{
     margin-right: 10px;
     cursor: pointer;
     padding: 5px;
+    
 }
 .slider h3:hover{
     background-color:#990000;
 }
 
 .slider .video:hover{
-   
+    transition: all 0.2s;
     color: black;
     margin-left: 5vw;
 }
 .slider .photo:hover{
     margin-right: 5vw;
     color: black;
+    transition: all 0.2s;
 }
 .video
 {
@@ -246,41 +251,17 @@ body {
     background-color: #66ffff;
     font-size: 18px;
 }
-.card1:hover{
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover{
     font-size: 20px;
     color:white;
     cursor: pointer;
+    height: 310px;
+    width: 525px;
+    transition: all 0.2s;
 
 }
-.card2:hover{
-    font-size: 20px;
-    cursor: pointer;
-    color:white;
 
-}
-.card3:hover{
-    font-size: 20px;
-    cursor: pointer;
-    color:white;
-
-}
-.card4:hover{
-    font-size: 20px;
-    cursor: pointer;
-    color:white;
-
-}
-.card5:hover{
-    font-size: 20px;
-    cursor: pointer;
-    color:white;
-}
-.card6:hover{
-    font-size: 20px;
-    cursor: pointer;
-    color:white;
-
-}
 .card-group{
     box-shadow: 5px 10px 25px black;
 }
@@ -339,7 +320,7 @@ body {
    margin-left: -45px;
     /* box-sizing:border-box;
    border: 1px solid white; */
-  
+   
 
 } 
 ul ul li{
@@ -354,6 +335,8 @@ ul ul li{
     box-sizing:border-box;
     background-color: #cc0000;
    border: 1px solid rgb(255, 255, 255);
+   padding-left: 3px;
+   
 }
 ul li:hover ul{
      display: block; 
@@ -392,6 +375,7 @@ ul ul li a.ho:hover {
 .nav-item{
     padding-left:1vw;
     padding-right:1vw;
+    
 }
 .navbar{
     background-color:  #990000;
@@ -406,6 +390,7 @@ ul ul li a.ho:hover {
 .nav-item:hover{
     background-color: #cc0000;
     font-size: 22px;
+    transition: all 0.3s;
 }
 .marquee{
     background-color: #003d99;
@@ -451,4 +436,10 @@ ul ul li a.ho:hover {
 .iframe{
     display: flex;
     justify-content: space-around;
+
+}
+#map:hover, #youtube:hover{
+    transform: scale(1.03);
+    transform-origin: center;
+    transition: all 0.2s;
 }
